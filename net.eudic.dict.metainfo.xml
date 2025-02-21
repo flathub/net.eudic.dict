@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <!--Created with jdAppStreamEdit 9.2-->
   <id>net.eudic.dict</id>
@@ -54,6 +54,9 @@ AI翻译：精准自然的AI翻译，超越各大翻译引擎
     </screenshot>
   </screenshots>
   <releases>
+    <release version="2025-02-21" date="2024-01-07">
+      <description></description>
+    </release>
     <release version="13.5.2" date="2025-01-10" type="stable"/>
   </releases>
   <url type="homepage">https://dict.eudic.net/</url>
