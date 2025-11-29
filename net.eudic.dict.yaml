@@ -5,7 +5,7 @@ sdk: org.freedesktop.Sdk
 separate-locales: false
 rename-icon: eudic
 rename-desktop-file: eudic.desktop
-command: eudic 
+command: eudic
 finish-args:
   - --share=ipc
   - --share=network
@@ -23,7 +23,7 @@ modules:
     subdir: src
     sources:
       - type: archive
-        url: 'https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz'
+        url: https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz
         sha256: b7a4cd5ead67fb08b980b21abd150ff7217e85ea320c9ed0c6dadd304840ad35
         x-checker-data:
           type: anitya
@@ -31,7 +31,7 @@ modules:
           stable-only: true
           url-template: >-
             https://kerberos.org/dist/krb5/${version0}.${version1}/krb5-${version0}.${version1}.${version2}.tar.gz
-    
+
   - name: eudic
     buildsystem: simple
     build-commands:
@@ -47,8 +47,9 @@ modules:
           - bsdtar --to-stdout -xf eudic.deb data.* | bsdtar -xf -
           - mv usr/share/eusoft-eudic ./
           - rm -r *.deb usr
-          - cd eusoft-eudic 
-          - rm libg* lib/libg* libmount* libkrb* libk5* libwayland* libatk* libudev.so.1 libmpg123.so.0 
+          - cd eusoft-eudic
+          - rm libg* lib/libg* libmount* libkrb* libk5* libwayland* libatk* libudev.so.1
+            libmpg123.so.0
 
       - type: script
         dest-filename: eudic.sh
@@ -68,12 +69,12 @@ modules:
       - type: extra-data
         filename: eudic.deb
         only-arches: [x86_64]
-        url: https://www.eudic.net/download/eudic.deb?v=2025-01-26
+        url: https://www.eudic.net/download/eudic.deb?v=2025-05-15
         sha256: 50f90345aa9617fa32747e80328deddcf513e5553deb510f2dc15be57c0e5d5b
         size: 215416316
         x-checker-data:
-          type: "html"
-          url: "https://www.eudic.net/v4/en/app/download"
-          version-pattern: "\\.deb\\?v=([\\d\\.-]+)"
-          url-template: "https://www.eudic.net/download/eudic.deb?v=$version"
+          type: html
+          url: https://www.eudic.net/v4/en/app/download
+          version-pattern: \.deb\?v=([\d\.-]+)
+          url-template: https://www.eudic.net/download/eudic.deb?v=$version
 
