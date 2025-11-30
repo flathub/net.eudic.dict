@@ -54,8 +54,11 @@ AI翻译：精准自然的AI翻译，超越各大翻译引擎
     </screenshot>
   </screenshots>
   <releases>
-    <release version="2025-05-15" date="2024-01-07">
+    <release version="2025-08-25" date="2024-01-07">
       <description></description>
+    </release>
+    <release version="2025-05-15" date="2024-01-07">
+      <description/>
     </release>
     <release version="13.5.2" date="2025-01-10" type="stable"/>
   </releases>
