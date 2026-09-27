@@ -69,9 +69,9 @@ modules:
       - type: extra-data
         filename: eudic.deb
         only-arches: [x86_64]
-        url: https://www.eudic.net/download/eudic.deb?v=2026-02-10
-        sha256: 50f90345aa9617fa32747e80328deddcf513e5553deb510f2dc15be57c0e5d5b
-        size: 215416316
+        url: https://www.eudic.net/download/eudic.deb?v=26.9.1
+        sha256: dd1faab01940cbf8a019a6d813e2ef1f0b50df65ebacdc96939a4d9f0b4d2892
+        size: 264276708
         x-checker-data:
           type: html
           url: https://www.eudic.net/v4/en/app/download
